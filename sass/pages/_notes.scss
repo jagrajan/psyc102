@@ -1,0 +1,107 @@
+.notes-container {
+max-width: 120rem;
+margin: 0 auto;
+font-size: 1.4rem;
+  
+.card {
+  
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 .1rem 0.3rem rgba($color-black,.2);
+}
+
+h2.section-header {
+  font-size: 1.8rem;
+  color: $color-tertiary-dark;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section.section {
+  h3.subsection {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $color-green;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  } 
+
+  .para:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-left: 2rem;
+
+    li:not(:last-child) {
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+  }
+
+}
+
+a.link {
+  color: $color-blue-light-1;
+  text-decoration: none;
+  transition: .15s all;
+  margin: 0 0.5rem;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    height: 0.2rem;
+    background: $color-blue-light-1;
+    transition: 0.15s all;
+    z-index: -1;
+    border-radius: 0.5rem;
+  }
+  
+  &:hover {
+    color: $color-white;
+    
+    &:after {
+      height: 100%;
+      left: 0;
+      right: 0;
+      transform-origin: bottom center;
+    }
+  }
+}
+
+.defn {
+  display: inline;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  background: #e6e6e6;
+  border-radius: 0.5rem;
+  transition: .2s all;
+  
+  &:hover {
+    background: #cccccc;
+  }
+  
+  .term {
+    display: inline;
+    color: $color-purple;
+    font-weight: 700;
+    
+    
+    &:after {
+      content: ":\ ";
+    }
+  } 
+  
+  .meaning {
+    display: inline;
+    color: $color-green;
+  }
+}
+}
