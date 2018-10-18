@@ -1,6 +1,7 @@
 doctype html
 html
   head(lang="en")
+    link(href="https://fonts.googleapis.com/css?family=Lato:400,700",rel="stylesheet")
     link(href="css/style.comp.css", rel="stylesheet")
     title Notes
   body
@@ -11,25 +12,11 @@ html
           | Course textbook and quizzes can be found at
           a.link(href="https://login.nelsonbrain.com/course/MTPPQGSPT6PP", target="_blank") Mindtap
       .card
+        h2.section-header Chapter 9: Intelligence and Psychological Testing
+        section.section
+          include includes/ch09.pug
+
+      .card
         h2.section-header Chapter 12: Personality: Theory, Research, and Assessment
         section.section
           include includes/ch12.pug
-
-
-      .card
-        h2.section-header Chapter 1: Fundamentals of PSYC
-        section.section
-          .defn
-            .term Functionalism
-            .meaning consciousness is divided into parts
-          | Wilhelm Wundt was a founder of psychology
-          a.link(href="#") Something
-          | and he really helped with structuralism
-      .card
-        h2.section-header Chapter 1: Fundamentals of PSYC
-        section.section
-          | Wilhelm Wundt was a founder of psychology
-          a.link(href="https://canvas.sfu.ca", target="_blank") Canvas
-          | and he really helped with structuralism
-          h3.subsection Functionalism
-    
