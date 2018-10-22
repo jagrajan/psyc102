@@ -6,6 +6,5 @@ $(document).ready(() => {
     const id = `section-${index}`;
     $( this ).attr( 'id' , id );
   });
-  console.log('Hello jQuery!');
 });
 

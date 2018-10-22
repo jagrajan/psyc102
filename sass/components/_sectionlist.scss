@@ -1,0 +1,25 @@
+ul.section-list {
+  padding: 2rem;
+  list-style: none;
+ 
+  & > li a {
+    color: $color-purple;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  ul.subsection-list {
+    margin-left: 4rem;
+    list-style: none;
+    line-height: 1.3rem;
+    font-size: 1.5rem;
+
+    & > li a {
+      color: $color-green;
+      text-decoration: none;
+      padding: 0.5rem;
+      display: block;
+    }
+  }
+}
