@@ -5,8 +5,12 @@ html
     link(href="css/style.comp.css", rel="stylesheet")
     title Notes
   body
+    header.header
+      h1 PSYC 102
+      h4 Fall 2018 D100
+      h4 Instructor: Russel Day
     .notes-container
-      ul.section-list
+      ul.section-list#toc
       .card
         h2.section-header Useful Resources
         section.section
@@ -29,5 +33,5 @@ html
         h2.section-header Chapter 14: Stress, Coping, and Health
         section.section
           include includes/ch14.pug
-    a(href="#")#scrollTopButton.scroll-top-button &uarr;
+    a(href="#toc").scroll-top-button Table of Contents
     script(src="js/client.bundle.js")

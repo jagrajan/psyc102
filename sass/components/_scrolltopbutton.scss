@@ -1,7 +1,13 @@
 .scroll-top-button {
-  background: red;
+  background: $color-green;
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 2rem;
+  bottom: 2rem;
+  font-size: 1.5rem;
   z-index: 1;
+  font-weight: 700;
+  color: $color-white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 1rem;
 }
