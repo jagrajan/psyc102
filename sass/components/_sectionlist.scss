@@ -7,6 +7,28 @@ ul.section-list {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 700;
+    position: relative;
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: -0.5rem;
+      bottom: -0.5rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      z-index: 1;
+      background: $color-purple;
+      transition: .2s all;
+      border-radius: 1rem;
+      opacity: 0;
+    }
+
+    &:hover {
+
+      &:after {
+        opacity: 0.2;
+      }
+    }
   }
 
   ul.subsection-list {
@@ -15,11 +37,37 @@ ul.section-list {
     line-height: 1.3rem;
     font-size: 1.5rem;
 
+    & > li {
+      display: block;
+    }
+
     & > li a {
       color: $color-green;
       text-decoration: none;
       padding: 0.5rem;
-      display: block;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        top: -0.15rem;
+        bottom: -0.15rem;
+        left: -0.15rem;
+        right: -0.15rem;
+        z-index: 1;
+        background: $color-green;
+        transition: .2s all;
+        border-radius: 1rem;
+        opacity: 0;
+      }
+
+      &:hover {
+
+        &:after {
+          opacity: 0.2;
+        }
+      }
     }
   }
 }
