@@ -8,6 +8,7 @@
 !.chef/cookbooks/
 
 !pug/
+pug/**/*.swp
 !sass/
 !package.json
 !package-lock.json
