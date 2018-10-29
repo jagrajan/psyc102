@@ -26,7 +26,7 @@ section.section {
     margin-top: 1.5rem;
   } 
 
-  .para:not(:last-child) {
+  p:not(:last-child), .para:not(:last-child) {
     margin-bottom: 1rem;
   }
 
