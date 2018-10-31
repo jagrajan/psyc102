@@ -6,6 +6,7 @@
 !.chef/
 .chef/*
 !.chef/cookbooks/
+.chef/cookbooks/**/*.swp
 
 !pug/
 pug/**/*.swp
